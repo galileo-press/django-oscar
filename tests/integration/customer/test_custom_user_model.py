@@ -8,5 +8,5 @@ class TestCustomUserModel(TestCase):
         klass = compat.get_user_model()
         try:
             klass.objects.create_user('_', 'a@a.com', 'pa55w0rd')
-        except Exception, e:
+        except Exception as e:
             self.fail("Unable to create user model: %s" % e)
