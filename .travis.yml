@@ -23,6 +23,7 @@ install:
 before_script:
   - mysql -e 'create database oscar_vagrant;'
   - psql -c 'create database oscar_vagrant;' -U postgres
+  - psql -c 'create database oscar_demo;' -U postgres
 
 script:
   - make travis
