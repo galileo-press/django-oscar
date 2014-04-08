@@ -39,7 +39,6 @@ DATABASES = {
         'ATOMIC_REQUESTS': True
     },
 }
-POSTGIS_VERSION = (2, 1, 1)
 
 CACHES = {
     'default': {
